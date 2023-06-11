@@ -1,5 +1,5 @@
 # Growtopia Wooden Platform Mass Calculator
-# Data https://www.desmos.com/calculator/j8e4la3phf
+# Data https://www.desmos.com/calculator/1vqfxdrqx7
 
 x = 1000 # No. blocks to be obtained
 
@@ -16,7 +16,7 @@ grass_yield = ( 200 / 381 ) * plat_block
 #print(str(grass_yield))
 #print(str(round(plat_block, 3)) + " Grass Seed (Tier 2) requires splicing " + str(round(grass_yield, 3)) + " Dirt Seed (Tier 1) and Rock Seed (Tier 1)")
 
-wood_yield = ( 200 / 379 ) * plat_block
+wood_yield = ( 136 / 206 ) * plat_block
 #print(str(wood_yield))
 
 #print(str(round(plat_block, 3)) + " Wood Block Seed (Tier 2) requires " + str(round(wood_yield, 3)) + " Dirt Seed (Tier 1) and Lava Seed (Tier 1)")
@@ -24,6 +24,8 @@ wood_yield = ( 200 / 379 ) * plat_block
 dirt_required = grass_yield + wood_yield # Total dirt seed required for mass
 plat_seed = ( 51 / 200 ) * ( 200 / 774 ) * x
 #print(str(plat_seed))
+total_plat = plat_block * ( 774 / 200 )
+#print(str(round(total_plat, )))
 
 print("Wooden Platform Mass Calculator made by fevo (c) 2023")
 print("=====================================================================")
@@ -38,11 +40,11 @@ print("Step 1:")
 print("- Splice " + str(round(grass_yield, )) + " Dirt Seed (+- 3 seeds) and Rock Seed (+- 3 seeds) to make Grass")
 print("- Harvest the Grass trees and you will get " + str(round(plat_block, )) + " Grass Seed after breaking them")
 print(" ")
-print(" Step 2:")
+print("Step 2:")
 print("- Splice " + str(round(wood_yield)) + " Dirt Seed (+- 3 seeds) and Lava Seed (+- 3 seeds) to make Wood Block")
-print("- Harvest the Wood Block trees and you will get " + str(round(plat_block, )) + "Wood Block Seed after breaking them")
+print("- Harvest the Wood Block trees and you will get " + str(round(plat_block, )) + " Wood Block Seed after breaking them")
 print(" ")
 print("Step 3 (Final):")
-print("- Splice " + str(round(plat_block, )) + "Grass Seed (+- 3 seeds) and Wood Block Seed (+- 3 seeds) to make Wooden Platform")
-print("- Harvest the Wooden Platform trees and you will get " + str(x) + " blocks and " + str(round(plat_seed, )) + " seeds")
+print("- Splice " + str(round(plat_block, )) + " Grass Seed (+- 3 seeds) and Wood Block Seed (+- 3 seeds) to make Wooden Platform")
+print("- Harvest the Wooden Platform trees and you will get approximately " + str(x) + " blocks and " + str(round(plat_seed, )) + " seeds")
 

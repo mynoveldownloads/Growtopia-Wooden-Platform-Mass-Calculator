@@ -1,7 +1,10 @@
 # Growtopia Wooden Platform Mass Calculator
 # Data https://www.desmos.com/calculator/1vqfxdrqx7
 
-x = 1000 # No. blocks to be obtained
+print("Wooden Platform Mass Calculator made by fevo (c) 2023")
+print("=====================================================================")
+
+x = int(input("Number of blocks to be obtained: ")) # No. blocks to be obtained
 
 #plat_block = ( 774 / 200 ) * x
 #y = plat_yield / x
@@ -27,8 +30,7 @@ plat_seed = ( 51 / 200 ) * ( 200 / 774 ) * x
 total_plat = plat_block * ( 774 / 200 )
 #print(str(round(total_plat, )))
 
-print("Wooden Platform Mass Calculator made by fevo (c) 2023")
-print("=====================================================================")
+
 print("Objective: Obtain " + str(x) + " Wooden Platform blocks")
 print(" ")
 print("Seeds required:")
